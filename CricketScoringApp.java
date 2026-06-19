@@ -1,4 +1,3 @@
-
 package com.cricket.scoring;
 
 import java.util.*;
@@ -35,10 +34,6 @@ public class CricketScoringApp {
         scanner.close();
     }
 
-    private void printScore() {
-        System.out.println("The score is");
-    }
-
     private void processBall(String input) {
         if (input.equals("W")) {
             wickets++;
@@ -64,3 +59,14 @@ public class CricketScoringApp {
             overs++;
             balls = 0;
         }
+    }
+
+    private boolean isInningsOver() {
+        return wickets >= 10 || overs >= MAX_OVERS;
+    }
+
+    private void printScore() {
+        System.out.println("Score: " + totalRuns + "/" + wickets +
+                " in " + overs + "." + balls + " overs");
+    }
+}
