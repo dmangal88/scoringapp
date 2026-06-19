@@ -36,4 +36,7 @@ public class Player {
     }
 
     // Getters
-   }
+    public String getName() { return name; }
+    public int getRuns() { return runs; }
+    public int getWickets() { return wickets; }
+}
