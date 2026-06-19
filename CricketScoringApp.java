@@ -22,7 +22,8 @@ public class CricketScoringApp {
         System.out.println("=== Cricket Scoring App ===");
 
         while (!isInningsOver()) {
-            System.out.println("\nEnter ball result (0-6 runs, W = wicket): ");
+            System.out.println("\nEnter the ball result (0-6 runs, W = wicket): ");
+            System.out.println("\nEnter (0-6 runs, W = wicket): ");
             String input = scanner.next();
 
             processBall(input.toUpperCase());
