@@ -35,6 +35,10 @@ public class CricketScoringApp {
         scanner.close();
     }
 
+    private void printScore() {
+        System.out.println("The score is");
+    }
+
     private void processBall(String input) {
         if (input.equals("W")) {
             wickets++;
